@@ -13,7 +13,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0,0,1);
+    box-shadow: 0 0 10px rgba(0, 0,0,0,1);
     width: 300px;
 }
 
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #28a745;
+    background-color: #218838;
 }
 
 #todo-list {
@@ -80,5 +80,5 @@ button:hover {
 }
 
 .todo-item button:hover {
-    background-color: #dc3545;
+    background-color: #c82333;
 }

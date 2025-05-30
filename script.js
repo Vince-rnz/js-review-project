@@ -13,7 +13,7 @@ function renderTodos() {
     todoList.innerHTML = '';
     todos.forEach((todo, index) =>{
         const li = document.createElement('li');
-        li.calssName = 'todo-item'
+        li.className = 'todo-item'
         li.innerHTML = `
         <span>${todo}</span>
         <button onclick="editTodo(${index})">Edit</button>
@@ -45,8 +45,8 @@ function editTodo(index) {
 
 //Function to delete a todo
 function deleteTodo (index) {
-    if (confirm('Are you sure you want to delete this too?')) {
-        todos.slice(index, 1);
+    if (confirm('Are you sure you want to delete this todo?')) {
+        todos.splice(index, 1);
         renderTodos();
     }
 }
@@ -54,5 +54,5 @@ function deleteTodo (index) {
 //Event Listeners
 todoForm.addEventListener('submit', addTodo);
 
-//Inirial render
+//Initial render
 renderTodos();
