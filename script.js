@@ -13,7 +13,7 @@ function renderTodos() {
     todoList.innerHTML = '';
     todos.forEach((todo, index) =>{
         const li = document.createElement('li');
-        li.className = 'todo-item'
+        li.className = 'todo-item';
         li.innerHTML = `
         <span>${todo}</span>
         <button onclick="editTodo(${index})">Edit</button>
